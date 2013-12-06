@@ -1,0 +1,101 @@
+.lists {
+  padding: 8px 9px 0 12px;
+  position: relative;
+  .level {
+    position: relative;
+
+    .level {
+      margin-left: 18px;
+    }
+  }
+  .name {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #157EFB;
+    font-family: @font_PM_bold;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .item-name {
+    padding-left: 3px;
+  }
+  .create-category {
+    position: absolute;
+    top: 0;
+    right: 9px;
+    font-size: 32px;
+    font-family: @font_PM_regular;
+    color: #157EFB;
+    cursor: pointer;
+  }
+  .expand_wrap {
+    .expanded {
+      display: none;
+    }
+  }
+  .showed {
+    .expanded {
+      display: inline-block;
+    }
+    .expand {
+      display: none;
+    }
+  }
+  .icon {
+    position: relative;
+    top: 1px;
+  }
+  .title {
+    font-family: @font_PM_regular;
+    color: #4A4A4A;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .amount {
+    position: absolute;
+    font-size: 12px;
+    color: #9B9B9B;
+    font-family: @font_PM_regular;
+    top: 2px;
+    right: 0;
+  }
+  .static-folders {
+    margin-bottom: 11px;
+    ul {
+      margin-left: 18px;
+
+      .expand_wrap {
+        display: none;
+      }
+    }
+  }
+  .no-subfolders {
+    padding-left: 14px;
+    .icon {
+      margin-left: 4px !important;
+    }
+    .expand_wrap {
+      display: none;
+    }
+  }
+  .custom-lists {
+    .level {
+      .level {
+        .icon {
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+}
+.categories_container {
+  padding-top: 8px;
+  height: 60%;
+  overflow: hidden;
+}
+.playlist_container {
+  height: 40%;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-top: 1px solid #adc5d7;
+}

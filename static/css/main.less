@@ -1,0 +1,47 @@
+// Less files import -------------------------------------------
+@import "reset";
+@import "layout";
+@import "menu";
+@import "fonts";
+@import "videos";
+@import "info";
+@import "buttons";
+@import "navigation";
+
+// Global vars -------------------------------------------------
+@head_height: 45px;
+@font_PM_light: 'proxima_nova_ltlight', sans-serif;
+@font_PM_regular: 'proxima_nova_rgregular', sans-serif;
+@font_PM_semibold: 'proxima_nova_ltsemibold', sans-serif;
+@font_PM_bold: 'proxima_nova_rgbold', sans-serif;
+
+// Global classes ----------------------------------------------
+.clear {
+  clear: both;
+  overflow: hidden;
+  line-height: 0;
+  height: 0;
+}
+.animation(@attr:all, @time:0.3s, @animation_type:ease-in-out) {
+  -moz-transition: @arguments;
+  -webkit-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+.border-r(@radius:10px) {
+  -moz-border-radius: @arguments;
+  -webkit-border-radius: @arguments;
+  -o-border-radius: @arguments;
+}
+.logo {
+  padding: 10px 0 0 10px;
+
+  span {
+    font-size: 20px;
+    font-family: @font_PM_semibold;
+    display: inline-block;
+    margin-left: 3px;
+    position: relative;
+    top: -9px;
+  }
+}
