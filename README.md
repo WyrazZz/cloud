@@ -1,0 +1,4 @@
+cloud
+=====
+
+static for cloud
